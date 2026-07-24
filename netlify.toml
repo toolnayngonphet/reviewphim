@@ -1,0 +1,8 @@
+[build]
+  functions = "netlify/functions"
+
+# Bắt tất cả đường dẫn (ví dụ: /xem-tron-bo-1, /xem-tron-bo-2...) và gửi về Function xử lý
+[[redirects]]
+  from = "/*"
+  to = "/.netlify/functions/redirect"
+  status = 200
